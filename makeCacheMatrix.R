@@ -26,7 +26,7 @@ makeCacheMatrix<-function(x=matrix()){
 ## cacheSolve checks if inverse has not already been calculated. 
 ## if so, it retrieves the cached object
 ## else it calculated the inverse and stores it.
-## Here are three test cases to test my code
+
 cacheSolve<-function(x,...){
         inv<-x$getInverse()
         if(!is.null(inv)){
@@ -38,6 +38,7 @@ cacheSolve<-function(x,...){
         x$setInverse(inv)
 }
 }
+## Here are three test cases to test my code
 # #output
 # #> source("makeCacheMatrix.R")
 # #> 
